@@ -6,4 +6,6 @@ comments: true
 categories: 简介 
 ---
 
-yisman电子社区,成立于2010年由沈阳理工信息学院7专业创建
+我亲爱的凌李涣小姐
+{% img http://p13.freep.cn/p.aspx?u=v20_p13_photo_1211281913464289_0.jpg %}
+
