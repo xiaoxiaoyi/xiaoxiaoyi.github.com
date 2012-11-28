@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[yisman电子社区]]></title>
-  <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 简介 | yisman电子社区]]></title>
+  <link href="http://xiaoxiaoyi.github.com/blog/categories/简介/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
   <updated>2012-11-28T12:50:24+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
