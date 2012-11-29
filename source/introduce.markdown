@@ -23,8 +23,7 @@ yisman电子社区,主要为打造沈阳理工电子信息交流平台,方便大
 
 #####易罗阳(yisman电子社区开发者)
 
-<img src="http://xiaoxiaoyi.sitemix.jp/head/yi-head.png" width="300" height="300">
-
+{% img http://xiaoxiaoyi.sitemix.jp/head/yi-head.png 300 300%}
 	09级沈阳理工大学电子信息科学与技术(信息院7专业)--在读生
 
 	在校期间从事C/C++的研究和学习,拥有多年的嵌入式编程经验和项目经验
@@ -65,5 +64,5 @@ yisman电子社区,主要为打造沈阳理工电子信息交流平台,方便大
 	
 
 #####凌李涣(yisman电子社区开发者)
-<img src="http://xiaoxiaoyi.sitemix.jp/head/ling-head.jpg" width="300" height="300">
+{% img http://xiaoxiaoyi.sitemix.jp/head/ling-head.jpg 300 300%}
 
