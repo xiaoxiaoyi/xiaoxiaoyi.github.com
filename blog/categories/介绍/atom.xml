@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 简介 | yisman电子社区]]></title>
-  <link href="http://xiaoxiaoyi.github.com/blog/categories/简介/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 介绍 | yisman电子社区]]></title>
+  <link href="http://xiaoxiaoyi.github.com/blog/categories/介绍/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2012-11-29T12:10:28+08:00</updated>
+  <updated>2012-11-29T12:33:52+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -14,12 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[团队简介]]></title>
+    <title type="html"><![CDATA[课程介绍]]></title>
     <link href="http://xiaoxiaoyi.github.com/blog/2012/11/28/tuan-dui-jian-jie/"/>
     <updated>2012-11-28T12:43:00+08:00</updated>
     <id>http://xiaoxiaoyi.github.com/blog/2012/11/28/tuan-dui-jian-jie</id>
-    <content type="html"><![CDATA[<p>我亲爱的凌李涣小姐
-<img src="http://p13.freep.cn/p.aspx?u=v20_p13_photo_1211281913464289_0.jpg"></p>
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
