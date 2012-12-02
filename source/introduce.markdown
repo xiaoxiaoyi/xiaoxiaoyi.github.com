@@ -16,7 +16,7 @@ yisman电子社区,主要为打造沈阳理工电子信息交流平台,方便大
 ,加入我们你将获得无限的惊喜......
 
 
-免费课程的地点时间获取的方式,请查看网站的[TEL Contact](/about.html/ "联系我们")页面
+免费课程的地点时间获取的方式,请查看网站的[TEL Contact](http://xiaoxiaoyi.github.com/about.html "联系我们")页面
 
 
 社区成员:
