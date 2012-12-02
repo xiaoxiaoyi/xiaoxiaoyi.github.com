@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 介绍 | yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/blog/categories/介绍/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2012-12-02T16:28:35+08:00</updated>
+  <updated>2012-12-02T19:17:16+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -18,7 +18,10 @@
     <link href="http://xiaoxiaoyi.github.com/blog/2012/11/28/tuan-dui-jian-jie/"/>
     <updated>2012-11-28T12:43:00+08:00</updated>
     <id>http://xiaoxiaoyi.github.com/blog/2012/11/28/tuan-dui-jian-jie</id>
-    <content type="html"><![CDATA[<p>本期课程主要面向电子爱好者和C语言学习者,一直以来很多人学了C语言后
+    <content type="html"><![CDATA[<iframe height=498 width=510 frameborder=0 src="http://player.youku.com/embed/XNDc0MjIwNjMy" allowfullscreen></iframe>
+
+
+<p>本期课程主要面向电子爱好者和C语言学习者,一直以来很多人学了C语言后
 感觉没有实际的用途,除了能写几个控制台程序外,也编写不出一个比较好看
 程序.但是C语言其实是非常强大而又无处不用的语言,只要我们稍微的转向
 嵌入式平台,我们马上可以看到C语言无穷的威力.同时针对信息学院的7专业(本人7专业出生)
