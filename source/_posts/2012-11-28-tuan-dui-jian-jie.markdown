@@ -6,12 +6,6 @@ comments: true
 categories: 介绍 
 ---
 
-<video id="my_video_1" class="video-js vjs-default-skin" controls
-  preload="auto" width="600" height="300" poster="/images/yisman.png"
-  data-setup="{}">
-  <source src="/vedio/dev_install.mp4" type='video/mp4'>
-  <source src="/vedio/dev_install.webm" type='video/webm'>
-</video>
 
 欢迎大家进入我们的电子课堂，今天是我们课程的首次亮相，希望大家能够喜欢我们的授课方式，从这里开始走入电子世界，从此在其中畅游，完成自己最初的梦想。
 
