@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2012-12-04T14:17:12+08:00</updated>
+  <updated>2012-12-04T14:23:34+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -19,10 +19,10 @@
     <updated>2012-11-28T12:43:00+08:00</updated>
     <id>http://xiaoxiaoyi.github.com/blog/2012/11/28/tuan-dui-jian-jie</id>
     <content type="html"><![CDATA[<p><video id="my_video_1" class="video-js vjs-default-skin" controls
-  preload="auto" width="640" height="264" poster="/image/yisman.png"
+  preload="auto" width="640" height="264" poster="/images/yisman.png"
   data-setup="{}">
-  <source src="http://xiaoxiaoyi.sitemix.jp/vedio/my-video.mp4" type='video/mp4'>
-  <source src="http://xiaoxiaoyi.sitemix.jp/vedio/my-video.webm" type='video/webm'>
+  <source src="http://xiaoxiaoyi.github.com/vedio/dev_install.mp4" type='video/mp4'>
+  <source src="http://xiaoxiaoyi.github.com/vedio/dev_install.webm" type='video/webm'>
 </video></p>
 
 <p>欢迎大家进入我们的电子课堂，今天是我们课程的首次亮相，希望大家能够喜欢我们的授课方式，从这里开始走入电子世界，从此在其中畅游，完成自己最初的梦想。</p>
