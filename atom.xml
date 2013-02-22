@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-16T14:51:01+08:00</updated>
+  <updated>2013-02-22T19:39:27+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wallpapoz Install]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/"/>
+    <updated>2013-02-22T18:27:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install</id>
+    <content type="html"><![CDATA[<h2>问题</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/Wallpapoz.png"></p>
+
+<h2>解决方法</h2>
+
+<h3>安装依赖包</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>安装图解</h3>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/WallpapozInstall.png"></p>
+
+<h3>外部链接</h3>
+
+<p><a href="http://maketecheasier.com/ubuntu-how-to-change-wallpaper-easily-with-wallpapoz/2008/02/29" title="Title">maketecheasier.com</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Lesson_Preview]]></title>
