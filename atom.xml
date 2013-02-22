@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-22T19:39:27+08:00</updated>
+  <updated>2013-02-22T21:53:02+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wallch Install]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallch-install/"/>
+    <updated>2013-02-22T21:32:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/22/wallch-install</id>
+    <content type="html"><![CDATA[<h4>安装代码</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:wallch/version-3-ppa
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get install wallch</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>效果图</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wallch1.jpg"></p>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wallch2.jpg"></p>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wallch3.jpg"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Wallpapoz Install]]></title>
