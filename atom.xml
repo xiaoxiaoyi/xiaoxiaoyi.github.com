@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-22T21:53:02+08:00</updated>
+  <updated>2013-02-22T23:59:12+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,77 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[lua complie error]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/22/lua-complie-error/"/>
+    <updated>2013-02-22T23:32:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/22/lua-complie-error</id>
+    <content type="html"><![CDATA[<h4>编译错误提示</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/lua_complie_error.png"></p>
+
+<h4>解决方法</h4>
+
+<p>/usr/bin/ld: cannot find -lncurses </p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>1.如果没有那就是缺少库文件
+</span><span class='line'>$ sudo apt-cache search ncurses-
+</span><span class='line'>有这样一个结果：
+</span><span class='line'>libncurses5-dev - developer's libraries and docs for ncurses
+</span><span class='line'>安装libncurses
+</span><span class='line'>
+</span><span class='line'>sudo apt-get install libncurses5-dev
+</span><span class='line'> 2.如果有这个文件，那么就不缺少库，只是文件类型的问题
+</span><span class='line'>查看此库应该不是以so结尾的，输入下面的代码，创建连接即可
+</span><span class='line'>
+</span><span class='line'>sudo ln -rf  libncurses(*****)  libncurses.so</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>测试</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/hellowrold_lua.png"></p>
+
+<h4>测试结果</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/hellowrold_lua_result.png"></p>
+
+<h4>意外收获</h4>
+
+<p>打开图片命令</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>eog XXX.png</span></code></pre></td></tr></table></div></figure>
+
+
+<p>屏幕截图</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>抓取桌面：scrot desktop.png
+</span><span class='line'>抓取窗口：scrot -bs window.png
+</span><span class='line'>抓取区域：scrot -s rectangle.png
+</span><span class='line'>延时抓取：scrot -cd 10 menu.png
+</span><span class='line'>操作抓图：scrot action.png -e ‘mv $f ~/images/’</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Wallch Install]]></title>
