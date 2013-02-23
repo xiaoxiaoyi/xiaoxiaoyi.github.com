@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: 介绍 - yisman电子社区</title>
+  <title>ls why no color? - yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="Category: 介绍">
+  <meta name="description" content="LS无配色 网上解决方法 1
+添加alias ls='ls --color'到.bashrc 结果 原因 my bash use longin shells for rvm use but bashrc for non-login shells MY解决方法I 1
+添加alias ls='ls &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.comblog/categories/介绍/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,36 +88,140 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: 介绍</h1>
+    
+      <h1 class="entry-title">Ls Why No Color?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T18:53:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
+
+
+<div class="entry-content"><h4>LS无配色</h4>
+
+<p><img class="center" src="/images/ls_nocolor.png"></p>
+
+<h4>网上解决方法</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bashrc</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>结果</h4>
+
+<p><img class="center" src="/images/ls_nocolor.png"></p>
+
+<h4>原因</h4>
+
+<center>
+my bash use longin shells for rvm use but bashrc for non-login shells
+</center>
+
+
+<p><img class="center" src="/images/bashrc_scope.png"></p>
+
+<h4>MY解决方法I</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>MY解决方法II</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加
+</span><span class='line'>if [ -f ~/.bash_aliases ]; then
+</span><span class='line'>    . ~/.bash_aliases
+</span><span class='line'>fi
+</span><span class='line'>到.bash_profile</span></code></pre></td></tr></table></div></figure>
 
 
 
-  
-  <h2>2012</h2>
 
-<article>
-  
-<h1><a href="/blog/2012/11/28/tuan-dui-jian-jie/">课程介绍</a></h1>
-<time datetime="2012-11-28T12:43:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>28</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/介绍/'>介绍</a></span>
-</footer>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>vim ~/.bash_profile
+</span><span class='line'>添加alias ls='ls --color'到.bash_profile
+</span><span class='line'>:wq</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<h4>效果</h4>
 
+<p><img class="center" src="/images/bash_result.png"></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">xiaoxiaoyi</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T18:53:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/22/lua-complie-error/" title="Previous Post: lua complie error">&laquo; lua complie error</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -174,7 +280,10 @@ Copyright &copy; 2013 - xiaoxiaoyi <!-- - -->
       var disqus_shortname = 'xiaoxiaoyi';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color/';
+        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

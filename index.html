@@ -9,21 +9,9 @@
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="编译错误提示 解决方法 /usr/bin/ld: cannot find -lncurses  1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-1.如果没有那就是缺少库文件
-$ sudo apt-cache search ncurses-
-有这样一个结果：
-libncurses5-dev -  &hellip;">
+  <meta name="description" content="LS无配色 网上解决方法 1
+添加alias ls='ls --color'到.bashrc 结果 原因 my bash use longin shells for rvm use but bashrc for non-login shells MY解决方法I 1
+添加alias ls='ls &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -101,6 +89,97 @@ libncurses5-dev -  &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/23/ls-why-no-color/">Ls Why No Color?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T18:53:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h4>LS无配色</h4>
+
+<p><img class="center" src="/images/ls_nocolor.png"></p>
+
+<h4>网上解决方法</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bashrc</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>结果</h4>
+
+<p><img class="center" src="/images/ls_nocolor.png"></p>
+
+<h4>原因</h4>
+
+<center>
+my bash use longin shells for rvm use but bashrc for non-login shells
+</center>
+
+
+<p><img class="center" src="/images/bashrc_scope.png"></p>
+
+<h4>MY解决方法I</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>MY解决方法II</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加
+</span><span class='line'>if [ -f ~/.bash_aliases ]; then
+</span><span class='line'>    . ~/.bash_aliases
+</span><span class='line'>fi
+</span><span class='line'>到.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>vim ~/.bash_profile
+</span><span class='line'>添加alias ls='ls --color'到.bash_profile
+</span><span class='line'>:wq</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>效果</h4>
+
+<p><img class="center" src="/images/bash_result.png"></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -480,6 +559,10 @@ libncurses5-dev -  &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/23/ls-why-no-color/">ls why no color?</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/22/lua-complie-error/">lua complie error</a>
       </li>
     
@@ -493,10 +576,6 @@ libncurses5-dev -  &hellip;">
     
       <li class="post">
         <a href="/blog/2012/12/04/lesson-preview/">Lesson_Preview</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/12/04/lesson-preview-c51-devinstall/">课程预览_C51_devinstall</a>
       </li>
     
   </ul>

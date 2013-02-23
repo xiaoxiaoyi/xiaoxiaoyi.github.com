@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-22T23:59:12+08:00</updated>
+  <updated>2013-02-23T19:25:02+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,70 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ls why no color?]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color/"/>
+    <updated>2013-02-23T18:53:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/23/ls-why-no-color</id>
+    <content type="html"><![CDATA[<h4>LS无配色</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/ls_nocolor.png"></p>
+
+<h4>网上解决方法</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bashrc</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>结果</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/ls_nocolor.png"></p>
+
+<h4>原因</h4>
+
+<center>
+my bash use longin shells for rvm use but bashrc for non-login shells
+</center>
+
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/bashrc_scope.png"></p>
+
+<h4>MY解决方法I</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>MY解决方法II</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加
+</span><span class='line'>if [ -f ~/.bash_aliases ]; then
+</span><span class='line'>    . ~/.bash_aliases
+</span><span class='line'>fi
+</span><span class='line'>到.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>vim ~/.bash_profile
+</span><span class='line'>添加alias ls='ls --color'到.bash_profile
+</span><span class='line'>:wq</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>效果</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/bash_result.png"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[lua complie error]]></title>
