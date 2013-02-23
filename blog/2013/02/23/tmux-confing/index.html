@@ -5,11 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: 介绍 - yisman电子社区</title>
+  <title>tmux confing - yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="Category: 介绍">
+  <meta name="description" content="tmux confing Start tmux on every shell login 1
+2
+3
+4
+5
+6
+Simply add the following line of bash code to your .bashrc before your aliases; the code for &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.comblog/categories/介绍/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/23/tmux-confing/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,36 +92,107 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: 介绍</h1>
+    
+      <h1 class="entry-title">Tmux Confing</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T23:00:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h4>tmux confing</h4>
 
-  
-  <h2>2012</h2>
+<p><img class="center" src="/images/tmux_config.png"></p>
 
-<article>
-  
-<h1><a href="/blog/2012/11/28/tuan-dui-jian-jie/">课程介绍</a></h1>
-<time datetime="2012-11-28T12:43:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>28</span> <span class='year'>2012</span></time>
+<h4>Start tmux on every shell login</h4>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/介绍/'>介绍</a></span>
-</footer>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Simply add the following line of bash code to your .bashrc before your aliases; the code for other shells is very similar:
+</span><span class='line'>[[ $TERM != "screen" ]] && exec tmux
+</span><span class='line'>~/.bashrc
+</span><span class='line'># If not running interactively, do not do anything
+</span><span class='line'>[[ $- != *i* ]] && return
+</span><span class='line'>[[ $TERM != screen* ]] && exec tmux</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<h4>extern link</h4>
 
+<p><a href="https://wiki.archlinux.org/index.php/Tmux">https://wiki.archlinux.org/index.php/Tmux</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">xiaoxiaoyi</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-23T23:00:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/23/tmux-confing/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/23/tmux-confing/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/23/dropbox-install/" title="Previous Post: dropbox install">&laquo; dropbox install</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -174,7 +251,10 @@ Copyright &copy; 2013 - xiaoxiaoyi <!-- - -->
       var disqus_shortname = 'xiaoxiaoyi';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/23/tmux-confing/';
+        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/23/tmux-confing/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
