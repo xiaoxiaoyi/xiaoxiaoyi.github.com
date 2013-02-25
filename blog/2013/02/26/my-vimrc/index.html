@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>yisman电子社区</title>
+  <title>my vimrc - yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="W3M 浏览器 W3M浏览器可用于快速查看lua manual文档 而且操作模式与VIM相同,I love it
-">
+  <meta name="description" content="vim origon vim deleteall 1
+rm -rf .vim* vim deleteall result vim install 1
+git clone git://github.com/amix/vimrc.git ~/.vim_runtime vim install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.com/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/26/my-vimrc/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,155 +87,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/26/w3m-liu-lan-qi/">W3m 浏览器</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-26T03:00:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>W3M 浏览器</h4>
-
-<p>W3M浏览器可用于快速查看lua manual文档</p>
-
-<p>而且操作模式与VIM相同,I love it</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/26/vimrc-map/">Vimrc Map</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>bufexplorer</h4>
-
-<p>Open bufexplorer</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>o :BufExplorer&lt;cr>
-</span><span class='line'>
-</span><span class='line'>" Close current buffer
-</span><span class='line'>map &lt;leader>bd :Bclose&lt;cr>
-</span><span class='line'>
-</span><span class='line'>" Close all buffers
-</span><span class='line'>map &lt;leader>ba :1,1000 bd!&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>MRU.vim</h4>
-
-<p>Open MRU.vim and see the recently open files:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>f :MRU&lt;CR></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>ctrlp.vim</h4>
-
-<p>Open ctrlp.vim plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>let g:ctrlp_map = '&lt;c-f>'</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>PeepOpen.vim</h4>
-
-<p>Open PeepOpen plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>j :PeepOpen&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>NERD.vim</h4>
-
-<p>Managing the NERD Tree plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nn :NERDTreeToggle&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nb :NERDTreeFromBookmark</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nf :NERDTreeFind&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/26/my-vimrc/">My Vimrc</a></h1>
+      <h1 class="entry-title">My Vimrc</h1>
     
     
       <p class="meta">
@@ -257,7 +115,7 @@
   </header>
 
 
-  <div class="entry-content"><h4>vim origon</h4>
+<div class="entry-content"><h4>vim origon</h4>
 
 <p><img class="center" src="/images/vimrc/vim_origon.png"></p>
 
@@ -543,92 +401,16 @@
 
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/25/vim-server/">Vim Server</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">xiaoxiaoyi</span></span>
 
-<time datetime="2013-02-25T11:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>原因</h4>
-
-<p>编译时加入 |+clientserver| 特性，Vim 可以作为命令服务器，接受客户的消息并
-执行
-<img class="center" src="/images/clientserver.png"></p>
-
-<h4>MY解决方法</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github.com:xiaoxiaoyi/vim73.git
-</span><span class='line'>tar 解压
-</span><span class='line'>.configuare
-</span><span class='line'>make
-</span><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>快捷使用</h4>
-
-<p><img class="center" src="/images/aliasvim.png"></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加别名到.bash_profile
-</span><span class='line'>alias e='vim --servername VIM-SERVER --remote-silent'
-</span><span class='line'>通过别名编辑
-</span><span class='line'>e filename</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/23/tmux-confing/">Tmux Confing</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -640,412 +422,40 @@
   
 
 
-<time datetime="2013-02-23T23:00:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>tmux confing</h4>
-
-<p><img class="center" src="/images/tmux_config.png"></p>
-
-<h4>Start tmux on every shell login</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Simply add the following line of bash code to your .bashrc before your aliases; the code for other shells is very similar:
-</span><span class='line'>[[ $TERM != "screen" ]] && exec tmux
-</span><span class='line'>~/.bashrc
-</span><span class='line'># If not running interactively, do not do anything
-</span><span class='line'>[[ $- != *i* ]] && return
-</span><span class='line'>[[ $TERM != screen* ]] && exec tmux</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>extern link</h4>
-
-<p><a href="https://wiki.archlinux.org/index.php/Tmux">https://wiki.archlinux.org/index.php/Tmux</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2013-02-26T01:04:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
       
-  <header>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/23/dropbox-install/">Dropbox Install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+      <div class="sharing">
   
-
-
-<time datetime="2013-02-23T21:41:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>Install Dropbox via command line</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the following command in your Linux terminal.
-</span><span class='line'>
-</span><span class='line'>32-bit:
-</span><span class='line'>
-</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
-</span><span class='line'>64-bit:
-</span><span class='line'>
-</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-</span><span class='line'>Next, run the Dropbox daemon from the newly created .dropbox-dist folder.
-</span><span class='line'>
-</span><span class='line'>~/.dropbox-dist/dropboxd
-</span><span class='line'>If you're running Dropbox on your server for the first time, you'll be asked to copy and paste a link in a working browser to create a new account or add your server to an existing account. Once you do, your Dropbox folder will be created in your home directory. Download this CLI script to control Dropbox from the command line. For easy access, put a symlink to the script anywhere in your PATH.</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>外部链接</h4>
-
-<p><a href="https://www.dropbox.com/install?os=lnx">https://www.dropbox.com/install?os=lnx</a></p>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/26/my-vimrc/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/26/my-vimrc/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/23/ls-why-no-color/">Ls Why No Color?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-23T18:53:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>LS无配色</h4>
-
-<p><img class="center" src="/images/ls_nocolor.png"></p>
-
-<h4>网上解决方法</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bashrc</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>结果</h4>
-
-<p><img class="center" src="/images/ls_nocolor.png"></p>
-
-<h4>原因</h4>
-
-<center>
-my bash use longin shells for rvm use but bashrc for non-login shells
-</center>
-
-
-<p><img class="center" src="/images/bashrc_scope.png"></p>
-
-<h4>MY解决方法I</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bash_profile</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>MY解决方法II</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加
-</span><span class='line'>if [ -f ~/.bash_aliases ]; then
-</span><span class='line'>    . ~/.bash_aliases
-</span><span class='line'>fi
-</span><span class='line'>到.bash_profile</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>vim ~/.bash_profile
-</span><span class='line'>添加alias ls='ls --color'到.bash_profile
-</span><span class='line'>:wq</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>效果</h4>
-
-<p><img class="center" src="/images/bash_result.png"></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/blog/2013/02/25/vim-server/" title="Previous Post: vim server">&laquo; vim server</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/22/lua-complie-error/">Lua Complie Error</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-22T23:32:00+08:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>编译错误提示</h4>
-
-<p><img class="center" src="/images/lua_complie_error.png"></p>
-
-<h4>解决方法</h4>
-
-<p>/usr/bin/ld: cannot find -lncurses </p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>1.如果没有那就是缺少库文件
-</span><span class='line'>$ sudo apt-cache search ncurses-
-</span><span class='line'>有这样一个结果：
-</span><span class='line'>libncurses5-dev - developer's libraries and docs for ncurses
-</span><span class='line'>安装libncurses
-</span><span class='line'>
-</span><span class='line'>sudo apt-get install libncurses5-dev
-</span><span class='line'> 2.如果有这个文件，那么就不缺少库，只是文件类型的问题
-</span><span class='line'>查看此库应该不是以so结尾的，输入下面的代码，创建连接即可
-</span><span class='line'>
-</span><span class='line'>sudo ln -rf  libncurses(*****)  libncurses.so</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>测试</h4>
-
-<p><img class="center" src="/images/hellowrold_lua.png"></p>
-
-<h4>测试结果</h4>
-
-<p><img class="center" src="/images/hellowrold_lua_result.png"></p>
-
-<h4>意外收获</h4>
-
-<p>打开图片命令</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>eog XXX.png</span></code></pre></td></tr></table></div></figure>
-
-
-<p>屏幕截图</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>抓取桌面：scrot desktop.png
-</span><span class='line'>抓取窗口：scrot -bs window.png
-</span><span class='line'>抓取区域：scrot -s rectangle.png
-</span><span class='line'>延时抓取：scrot -cd 10 menu.png
-</span><span class='line'>操作抓图：scrot action.png -e ‘mv $f ~/images/’</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/22/wallch-install/">Wallch Install</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-22T21:32:00+08:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h4>安装代码</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:wallch/version-3-ppa
-</span><span class='line'>sudo apt-get update
-</span><span class='line'>sudo apt-get install wallch</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>效果图</h4>
-
-<p><img class="center" src="/images/wallch1.jpg"></p>
-
-<p><img class="center" src="/images/wallch2.jpg"></p>
-
-<p><img class="center" src="/images/wallch3.jpg"></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment right" href="/blog/2013/02/26/vimrc-map/" title="Next Post: vimrc map">vimrc map &raquo;</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/22/wallpapoz-install/">Wallpapoz Install</a></h1>
-    
-    
-      <p class="meta">
-        
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-22T18:27:00+08:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>问题</h2>
-
-<p><img class="center" src="/images/Wallpapoz.png"></p>
-
-<h2>解决方法</h2>
-
-<h3>安装依赖包</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>安装图解</h3>
-
-<p><img class="center" src="/images/WallpapozInstall.png"></p>
-
-<h3>外部链接</h3>
-
-<p><a href="http://maketecheasier.com/ubuntu-how-to-change-wallpaper-easily-with-wallpapoz/2008/02/29" title="Title">maketecheasier.com</a></p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  
-  
+  </section>
 
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">课程总览 </a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -1086,6 +496,7 @@ my bash use longin shells for rvm use but bashrc for non-login shells
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -1100,7 +511,10 @@ Copyright &copy; 2013 - xiaoxiaoyi <!-- - -->
       var disqus_shortname = 'xiaoxiaoyi';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/my-vimrc/';
+        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/my-vimrc/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

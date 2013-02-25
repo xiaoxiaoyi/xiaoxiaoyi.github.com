@@ -5,13 +5,19 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Wallpapoz Install - yisman电子社区</title>
+  <title>vimrc map - yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="问题 解决方法 安装依赖包 1
-sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安装图解 外部链接 maketecheasier.com
-">
+  <meta name="description" content="bufexplorer Open bufexplorer 1
+2
+3
+4
+5
+6
+7
+map &lt;leader>o :BufExplorer&lt;cr> " Close current buffer
+map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +26,7 @@ sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安�
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -92,7 +98,7 @@ sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安�
   
   <header>
     
-      <h1 class="entry-title">Wallpapoz Install</h1>
+      <h1 class="entry-title">Vimrc Map</h1>
     
     
       <p class="meta">
@@ -108,32 +114,78 @@ sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安�
   
 
 
-<time datetime="2013-02-22T18:27:00+08:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
+<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>问题</h2>
+<div class="entry-content"><h4>bufexplorer</h4>
 
-<p><img class="center" src="/images/Wallpapoz.png"></p>
-
-<h2>解决方法</h2>
-
-<h3>安装依赖包</h3>
+<p>Open bufexplorer</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>o :BufExplorer&lt;cr>
+</span><span class='line'>
+</span><span class='line'>" Close current buffer
+</span><span class='line'>map &lt;leader>bd :Bclose&lt;cr>
+</span><span class='line'>
+</span><span class='line'>" Close all buffers
+</span><span class='line'>map &lt;leader>ba :1,1000 bd!&lt;cr></span></code></pre></td></tr></table></div></figure>
 
 
-<h3>安装图解</h3>
+<h4>MRU.vim</h4>
 
-<p><img class="center" src="/images/WallpapozInstall.png"></p>
+<p>Open MRU.vim and see the recently open files:</p>
 
-<h3>外部链接</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>f :MRU&lt;CR></span></code></pre></td></tr></table></div></figure>
 
-<p><a href="http://maketecheasier.com/ubuntu-how-to-change-wallpaper-easily-with-wallpapoz/2008/02/29" title="Title">maketecheasier.com</a></p>
+
+<h4>ctrlp.vim</h4>
+
+<p>Open ctrlp.vim plugin:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>let g:ctrlp_map = '&lt;c-f>'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>PeepOpen.vim</h4>
+
+<p>Open PeepOpen plugin:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>j :PeepOpen&lt;cr></span></code></pre></td></tr></table></div></figure>
+
+
+<h4>NERD.vim</h4>
+
+<p>Managing the NERD Tree plugin:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nn :NERDTreeToggle&lt;cr></span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nb :NERDTreeFromBookmark</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nf :NERDTreeFind&lt;cr></span></code></pre></td></tr></table></div></figure>
+
+
+
 </div>
 
 
@@ -156,7 +208,7 @@ sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安�
   
 
 
-<time datetime="2013-02-22T18:27:00+08:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2013</time>
+<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
       
 
 
@@ -164,7 +216,7 @@ sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安�
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/" >Tweet</a>
   
   
   
@@ -173,10 +225,10 @@ sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2 安�
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/12/04/lesson-preview/" title="Previous Post: Lesson_Preview">&laquo; Lesson_Preview</a>
+        <a class="basic-alignment left" href="/blog/2013/02/26/my-vimrc/" title="Previous Post: my vimrc">&laquo; my vimrc</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/02/22/wallch-install/" title="Next Post: Wallch Install">Wallch Install &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/02/26/w3m-liu-lan-qi/" title="Next Post: w3m 浏览器">w3m 浏览器 &raquo;</a>
       
     </p>
   </footer>
@@ -246,8 +298,8 @@ Copyright &copy; 2013 - xiaoxiaoyi <!-- - -->
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/';
-        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/';
+        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/';
+        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/';
         var disqus_script = 'embed.js';
       
     (function () {
