@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-24T02:01:43+08:00</updated>
+  <updated>2013-02-25T11:29:00+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vim server]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/25/vim-server/"/>
+    <updated>2013-02-25T11:00:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/25/vim-server</id>
+    <content type="html"><![CDATA[<h4>原因</h4>
+
+<p>编译时加入 |+clientserver| 特性，Vim 可以作为命令服务器，接受客户的消息并
+执行
+<img class="center" src="http://xiaoxiaoyi.github.com/images/clientserver.png"></p>
+
+<h4>MY解决方法</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github.com:xiaoxiaoyi/vim73.git
+</span><span class='line'>tar 解压
+</span><span class='line'>.configuare
+</span><span class='line'>make
+</span><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>快捷使用</h4>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/aliasvim.png"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加别名到.bash_profile
+</span><span class='line'>alias e='vim --servername VIM-SERVER --remote-silent'
+</span><span class='line'>通过别名编辑
+</span><span class='line'>e filename</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[tmux confing]]></title>
