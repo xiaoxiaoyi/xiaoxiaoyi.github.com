@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-26T03:04:47+08:00</updated>
+  <updated>2013-02-26T03:30:43+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -26,7 +26,7 @@
 
 <h4>外部链接</h4>
 
-<p>[http://wiki.ubuntu.org.cn/W3m] (http://wiki.ubuntu.org.cn/W3m)</p>
+<p><a href="http://wiki.ubuntu.org.cn/W3m">W3m</a></p>
 ]]></content>
   </entry>
   
