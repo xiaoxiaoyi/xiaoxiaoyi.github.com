@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-28T07:54:30+08:00</updated>
+  <updated>2013-02-28T07:56:38+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -18,14 +18,9 @@
     <link href="http://xiaoxiaoyi.github.com/blog/2013/02/28/keyboard-list-of-components/"/>
     <updated>2013-02-28T07:40:00+08:00</updated>
     <id>http://xiaoxiaoyi.github.com/blog/2013/02/28/keyboard-list-of-components</id>
-    <content type="html"><![CDATA[<p><HTML>
-<HEAD>
-<TITLE>MainGrid</TITLE></p>
+    <content type="html"><![CDATA[<h2>元件清单</h2>
 
-
-
-<p></HEAD>
-<BODY BGCOLOR=#C0C0C0></p>
+<p><BODY BGCOLOR=#C0C0C0></p>
 
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1 BGCOLOR=#C0C0C0><TR><TD>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=1 BGCOLOR=#C0C0C0>
@@ -57,8 +52,7 @@
 </TD></TR></TABLE>
 
 
-<p></BODY>
-</HTML></p>
+<p></BODY></p>
 
 <h2>外部链接</h2>
 
