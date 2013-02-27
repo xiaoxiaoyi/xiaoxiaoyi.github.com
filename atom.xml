@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-02-26T03:30:43+08:00</updated>
+  <updated>2013-02-27T20:06:08+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[let you life more long]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/27/let-you-life-more-long/"/>
+    <updated>2013-02-27T19:46:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/27/let-you-life-more-long</id>
+    <content type="html"><![CDATA[<h2>如何让你的生活有规律</h2>
+
+<p>如果你想从事程序人生,并且进入linux程序人生,我想你的生活不应该被
+复杂难懂的语言,功能bug所占据,那么你应该明确规定的开机时间,作为一名
+刚出道的小子,习惯了上课的感觉,本人设定为开机时长为45分钟</p>
+
+<h2>linux如何设定你的开机时间?</h2>
+
+<p>在rc.local下面添加
+shutdown -h +45</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo vim /etc/rc.local
+</span><span class='line'>shutdown -h +45</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>预览</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/longlife/longlife.png"></p>
+
+<h2>linux其实更懂你</h2>
+
+<p>仅仅就是一句话而已,但你会发现linux更懂你的需求</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[new-post]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/27/new-post/"/>
+    <updated>2013-02-27T19:44:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/02/27/new-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[w3m 浏览器]]></title>
