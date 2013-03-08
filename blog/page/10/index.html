@@ -5,19 +5,23 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>vimrc map - yisman电子社区</title>
+  <title>yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="bufexplorer Open bufexplorer 1
+  <meta name="description" content="Install Dropbox via command line 1
 2
 3
 4
 5
 6
 7
-map &lt;leader>o :BufExplorer&lt;cr> " Close current buffer
-map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
+8
+9
+10
+11
+12
+The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -26,7 +30,7 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/page/10/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -93,12 +97,15 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article class="hentry" role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
     
-      <h1 class="entry-title">Vimrc Map</h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/23/dropbox-install/">Dropbox Install</a></h1>
     
     
       <p class="meta">
@@ -114,16 +121,14 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   
 
 
-<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
+<time datetime="2013-02-23T21:41:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h4>bufexplorer</h4>
-
-<p>Open bufexplorer</p>
+  <div class="entry-content"><h4>Install Dropbox via command line</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -132,116 +137,45 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>o :BufExplorer&lt;cr>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the following command in your Linux terminal.
 </span><span class='line'>
-</span><span class='line'>" Close current buffer
-</span><span class='line'>map &lt;leader>bd :Bclose&lt;cr>
+</span><span class='line'>32-bit:
 </span><span class='line'>
-</span><span class='line'>" Close all buffers
-</span><span class='line'>map &lt;leader>ba :1,1000 bd!&lt;cr></span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
+</span><span class='line'>64-bit:
+</span><span class='line'>
+</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+</span><span class='line'>Next, run the Dropbox daemon from the newly created .dropbox-dist folder.
+</span><span class='line'>
+</span><span class='line'>~/.dropbox-dist/dropboxd
+</span><span class='line'>If you're running Dropbox on your server for the first time, you'll be asked to copy and paste a link in a working browser to create a new account or add your server to an existing account. Once you do, your Dropbox folder will be created in your home directory. Download this CLI script to control Dropbox from the command line. For easy access, put a symlink to the script anywhere in your PATH.</span></code></pre></td></tr></table></div></figure>
 
 
-<h4>MRU.vim</h4>
+<h4>外部链接</h4>
 
-<p>Open MRU.vim and see the recently open files:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>f :MRU&lt;CR></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>ctrlp.vim</h4>
-
-<p>Open ctrlp.vim plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>let g:ctrlp_map = '&lt;c-f>'</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>PeepOpen.vim</h4>
-
-<p>Open PeepOpen plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>j :PeepOpen&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>NERD.vim</h4>
-
-<p>Managing the NERD Tree plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nn :NERDTreeToggle&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nb :NERDTreeFromBookmark</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nf :NERDTreeFind&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-
+<p><a href="https://www.dropbox.com/install?os=lnx">https://www.dropbox.com/install?os=lnx</a></p>
 </div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">xiaoxiaoyi</span></span>
-
-      
-
-
-
-
-
-
-
-
   
 
 
-<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
-      
-
-
-    </p>
+    </article>
+  
+  <div class="pagination">
     
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/" >Tweet</a>
-  
-  
-  
-</div>
-
+      <a class="prev" href="/blog/page/11/">&larr; Older</a>
     
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/02/26/my-vimrc/" title="Previous Post: my vimrc">&laquo; my vimrc</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/02/26/w3m-liu-lan-qi/" title="Next Post: w3m 浏览器">w3m 浏览器 &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="/blog/archives">课程总览 </a>
+    
+    <a class="next" href="/blog/page/9/">Newer &rarr;</a>
+    
+  </div>
 </div>
-  </section>
-
-</div>
-
 <aside class="sidebar">
   
     <section>
@@ -302,7 +236,6 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   
 </aside>
 
-
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -317,10 +250,7 @@ Copyright &copy; 2013 - xiaoxiaoyi <!-- - -->
       var disqus_shortname = 'xiaoxiaoyi';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/';
-        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
