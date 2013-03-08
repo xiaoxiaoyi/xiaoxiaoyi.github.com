@@ -5,19 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>vimrc map - yisman电子社区</title>
+  <title>STM32 ADC部分记得给供电 - yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="bufexplorer Open bufexplorer 1
-2
-3
-4
-5
-6
-7
-map &lt;leader>o :BufExplorer&lt;cr> " Close current buffer
-map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
+  <meta name="description" content="STM32模拟部分记得供电这样才能下载进去程序
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -26,7 +19,7 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -98,7 +91,7 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Vimrc Map</h1>
+      <h1 class="entry-title">STM32 ADC部分记得给供电</h1>
     
     
       <p class="meta">
@@ -114,78 +107,14 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   
 
 
-<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
+<time datetime="2013-03-09T02:33:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h4>bufexplorer</h4>
-
-<p>Open bufexplorer</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>o :BufExplorer&lt;cr>
-</span><span class='line'>
-</span><span class='line'>" Close current buffer
-</span><span class='line'>map &lt;leader>bd :Bclose&lt;cr>
-</span><span class='line'>
-</span><span class='line'>" Close all buffers
-</span><span class='line'>map &lt;leader>ba :1,1000 bd!&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>MRU.vim</h4>
-
-<p>Open MRU.vim and see the recently open files:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>f :MRU&lt;CR></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>ctrlp.vim</h4>
-
-<p>Open ctrlp.vim plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>let g:ctrlp_map = '&lt;c-f>'</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>PeepOpen.vim</h4>
-
-<p>Open PeepOpen plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>j :PeepOpen&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-<h4>NERD.vim</h4>
-
-<p>Managing the NERD Tree plugin:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nn :NERDTreeToggle&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nb :NERDTreeFromBookmark</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>map &lt;leader>nf :NERDTreeFind&lt;cr></span></code></pre></td></tr></table></div></figure>
-
-
-
+<div class="entry-content"><h2>STM32模拟部分记得供电这样才能下载进去程序</h2>
 </div>
 
 
@@ -208,7 +137,7 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
   
 
 
-<time datetime="2013-02-26T01:44:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
+<time datetime="2013-03-09T02:33:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
       
 
 
@@ -216,7 +145,7 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/" >Tweet</a>
   
   
   
@@ -225,10 +154,8 @@ map &lt;leader>bd :Bclose&lt;cr> " Close all &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/26/my-vimrc/" title="Previous Post: my vimrc">&laquo; my vimrc</a>
+        <a class="basic-alignment left" href="/blog/2013/03/09/del-line-start-and-end-space/" title="Previous Post: del line start and end space">&laquo; del line start and end space</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/02/26/w3m-liu-lan-qi/" title="Next Post: w3m 浏览器">w3m 浏览器 &raquo;</a>
       
     </p>
   </footer>
@@ -318,8 +245,8 @@ Copyright &copy; 2013 - xiaoxiaoyi <!-- - -->
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/';
-        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/02/26/vimrc-map/';
+        var disqus_identifier = 'http://xiaoxiaoyi.github.com/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/';
+        var disqus_url = 'http://xiaoxiaoyi.github.com/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/';
         var disqus_script = 'embed.js';
       
     (function () {

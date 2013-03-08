@@ -9,8 +9,9 @@
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="如何让你的生活有规律 如果你想从事程序人生,并且进入linux程序人生,我想你的生活不应该被
+复杂难懂的语言,功能bug所占据,那么你应该明确规定的开机时间,作为一名
+刚出道的小子,习惯了上课的感觉,本人设定为开机时长为45分钟 linux如何设定你的开机时间? 在rc.local下面添加 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,7 +95,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/27/new-post/">New-post</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/27/let-you-life-more-long/">Let You Life More Long</a></h1>
     
     
       <p class="meta">
@@ -110,14 +111,37 @@
   
 
 
-<time datetime="2013-02-27T19:44:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
+<time datetime="2013-02-27T19:46:00+08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><h2>如何让你的生活有规律</h2>
+
+<p>如果你想从事程序人生,并且进入linux程序人生,我想你的生活不应该被
+复杂难懂的语言,功能bug所占据,那么你应该明确规定的开机时间,作为一名
+刚出道的小子,习惯了上课的感觉,本人设定为开机时长为45分钟</p>
+
+<h2>linux如何设定你的开机时间?</h2>
+
+<p>在rc.local下面添加
+shutdown -h +45</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo vim /etc/rc.local
+</span><span class='line'>shutdown -h +45</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>预览</h2>
+
+<p><img class="center" src="/images/longlife/longlife.png"></p>
+
+<h2>linux其实更懂你</h2>
+
+<p>仅仅就是一句话而已,但你会发现linux更懂你的需求</p>
 </div>
   
   
@@ -143,6 +167,10 @@
   -->
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/">STM32 ADC部分记得给供电</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/03/09/del-line-start-and-end-space/">del line start and end space</a>
@@ -178,10 +206,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/25/vim-server/">vim server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/23/tmux-confing/">tmux confing</a>
       </li>
     
   </ul>

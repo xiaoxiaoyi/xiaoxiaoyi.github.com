@@ -9,17 +9,9 @@
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="原因 编译时加入 |+clientserver| 特性，Vim 可以作为命令服务器，接受客户的消息并
-执行 MY解决方法 1
-2
-3
-4
-5
-git clone git@github.com:xiaoxiaoyi/vim73.git
-tar 解压
-.configuare
-make
-sudo &hellip;">
+  <meta name="description" content="vim origon vim deleteall 1
+rm -rf .vim* vim deleteall result vim install 1
+git clone git://github.com/amix/vimrc.git ~/.vim_runtime vim install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,7 +95,7 @@ sudo &hellip;">
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/25/vim-server/">Vim Server</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/26/my-vimrc/">My Vimrc</a></h1>
     
     
       <p class="meta">
@@ -119,45 +111,295 @@ sudo &hellip;">
   
 
 
-<time datetime="2013-02-25T11:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
+<time datetime="2013-02-26T01:04:00+08:00" pubdate data-updated="true">Feb 26<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h4>原因</h4>
+  <div class="entry-content"><h4>vim origon</h4>
 
-<p>编译时加入 |+clientserver| 特性，Vim 可以作为命令服务器，接受客户的消息并
-执行
-<img class="center" src="/images/clientserver.png"></p>
+<p><img class="center" src="/images/vimrc/vim_origon.png"></p>
 
-<h4>MY解决方法</h4>
+<h4>vim deleteall</h4>
+
+<p><img class="center" src="/images/vimrc/vim_deleteall.png"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rm -rf .vim*</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>vim deleteall result</h4>
+
+<p><img class="center" src="/images/vimrc/vim_deleteresult.png"></p>
+
+<h4>vim install</h4>
+
+<p><img class="center" src="/images/vimrc/vim_install.png"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/amix/vimrc.git ~/.vim_runtime</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>vim install result</h4>
+
+<p><img class="center" src="/images/vimrc/vim_install_result.png"></p>
+
+<h4>vim .vimrc install</h4>
+
+<p><img class="center" src="/images/vimrc/vim_sh_install.png"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sh ~/.vim_runtime/install_awesome_vimrc.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>vimruntime tree</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github.com:xiaoxiaoyi/vim73.git
-</span><span class='line'>tar 解压
-</span><span class='line'>.configuare
-</span><span class='line'>make
-</span><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>├── autoload
+</span><span class='line'>├── sources_forked
+</span><span class='line'>│   ├── mru
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── peaksea //color scheme配色主题
+</span><span class='line'>│   │   └── colors
+</span><span class='line'>│   ├── set_tabline
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── vim-irblack-forked
+</span><span class='line'>│   │   └── colors
+</span><span class='line'>│   ├── vim-peepopen
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   └── yankring
+</span><span class='line'>│       ├── doc
+</span><span class='line'>│       └── plugin
+</span><span class='line'>├── sources_non_forked
+</span><span class='line'>│   ├── ack.vim
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── bufexplorer.zip
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── ctrlp.vim
+</span><span class='line'>│   │   ├── autoload
+</span><span class='line'>│   │   │   └── ctrlp
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── mayansmoke
+</span><span class='line'>│   │   └── colors
+</span><span class='line'>│   ├── nerdtree
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   ├── nerdtree_plugin
+</span><span class='line'>│   │   ├── plugin
+</span><span class='line'>│   │   └── syntax
+</span><span class='line'>│   ├── open_file_under_cursor.vim
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── snipmate-snippets
+</span><span class='line'>│   │   └── snippets
+</span><span class='line'>│   ├── tlib
+</span><span class='line'>│   │   ├── autoload
+</span><span class='line'>│   │   │   └── tlib
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   ├── plugin
+</span><span class='line'>│   │   └── test
+</span><span class='line'>│   ├── vim-addon-mw-utils
+</span><span class='line'>│   │   ├── autoload
+</span><span class='line'>│   │   └── doc
+</span><span class='line'>│   ├── vim-bundle-mako
+</span><span class='line'>│   │   ├── ftdetect
+</span><span class='line'>│   │   ├── indent
+</span><span class='line'>│   │   └── syntax
+</span><span class='line'>│   ├── vim-coffee-script
+</span><span class='line'>│   │   ├── after
+</span><span class='line'>│   │   │   └── syntax
+</span><span class='line'>│   │   ├── compiler
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   ├── ftdetect
+</span><span class='line'>│   │   ├── ftplugin
+</span><span class='line'>│   │   ├── indent
+</span><span class='line'>│   │   ├── syntax
+</span><span class='line'>│   │   └── test
+</span><span class='line'>│   ├── vim-colors-solarized
+</span><span class='line'>│   │   ├── autoload
+</span><span class='line'>│   │   ├── bitmaps
+</span><span class='line'>│   │   ├── colors
+</span><span class='line'>│   │   └── doc
+</span><span class='line'>│   ├── vim-less
+</span><span class='line'>│   │   ├── ftdetect
+</span><span class='line'>│   │   ├── ftplugin
+</span><span class='line'>│   │   ├── indent
+</span><span class='line'>│   │   └── syntax
+</span><span class='line'>│   ├── vim-markdown
+</span><span class='line'>│   │   ├── ftdetect
+</span><span class='line'>│   │   ├── ftplugin
+</span><span class='line'>│   │   └── syntax
+</span><span class='line'>│   ├── vim-powerline
+</span><span class='line'>│   │   ├── autoload
+</span><span class='line'>│   │   │   ├── Pl
+</span><span class='line'>│   │   │   └── Powerline
+</span><span class='line'>│   │   │       ├── Colorschemes
+</span><span class='line'>│   │   │       ├── Functions
+</span><span class='line'>│   │   │       ├── Segments
+</span><span class='line'>│   │   │       └── Themes
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   ├── fontpatcher
+</span><span class='line'>│   │   └── plugin
+</span><span class='line'>│   ├── vim-pyte
+</span><span class='line'>│   │   └── colors
+</span><span class='line'>│   ├── vim-snipmate
+</span><span class='line'>│   │   ├── after
+</span><span class='line'>│   │   │   └── plugin
+</span><span class='line'>│   │   ├── autoload
+</span><span class='line'>│   │   ├── doc
+</span><span class='line'>│   │   ├── ftplugin
+</span><span class='line'>│   │   ├── plugin
+</span><span class='line'>│   │   └── syntax
+</span><span class='line'>│   ├── vim-snippets
+</span><span class='line'>│   └── vim-surround
+</span><span class='line'>│       ├── doc
+</span><span class='line'>│       └── plugin
+</span><span class='line'>├── temp_dirs
+</span><span class='line'>│   └── undodir
+</span><span class='line'>└── vimrcs</span></code></pre></td></tr></table></div></figure>
 
 
-<h4>快捷使用</h4>
+<h4>自己配置vim</h4>
 
-<p><img class="center" src="/images/aliasvim.png"></p>
+<p>After you have installed the setup you can create ~/.vim_runtime/</p>
+
+<p>my_configs.vim to fill in any configurations that are important</p>
+
+<p>for you.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加别名到.bash_profile
-</span><span class='line'>alias e='vim --servername VIM-SERVER --remote-silent'
-</span><span class='line'>通过别名编辑
-</span><span class='line'>e filename</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd 
+</span><span class='line'>cd ~/.vim_runtime
+</span><span class='line'>cat my_configs.vim
+</span><span class='line'>i
+</span><span class='line'>set nu
+</span><span class='line'>:wq</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>自己安装vim插件</h4>
+
+<p>You can also install your own plugins, for instance, via pathogen</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/.vim_runtime
+</span><span class='line'>mkdir bundle
+</span><span class='line'>vim ~/.vim_runtime/my_configs.vim
+</span><span class='line'>filetype plugin indent on
+</span><span class='line'>call pathogen#infect()</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -186,6 +428,10 @@ sudo &hellip;">
   -->
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/stm32-adcbu-fen-ji-de-gei-gong-dian/">STM32 ADC部分记得给供电</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/03/09/del-line-start-and-end-space/">del line start and end space</a>
@@ -221,10 +467,6 @@ sudo &hellip;">
     
       <li class="post">
         <a href="/blog/2013/02/25/vim-server/">vim server</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/23/tmux-confing/">tmux confing</a>
       </li>
     
   </ul>
