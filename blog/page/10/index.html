@@ -9,19 +9,13 @@
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="Install Dropbox via command line 1
+  <meta name="description" content="tmux confing Start tmux on every shell login 1
 2
 3
 4
 5
 6
-7
-8
-9
-10
-11
-12
-The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the &hellip;">
+Simply add the following line of bash code to your .bashrc before your aliases; the code for &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,7 +99,7 @@ The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/23/dropbox-install/">Dropbox Install</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/23/tmux-confing/">Tmux Confing</a></h1>
     
     
       <p class="meta">
@@ -121,14 +115,18 @@ The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install
   
 
 
-<time datetime="2013-02-23T21:41:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-02-23T23:00:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h4>Install Dropbox via command line</h4>
+  <div class="entry-content"><h4>tmux confing</h4>
+
+<p><img class="center" src="/images/tmux_config.png"></p>
+
+<h4>Start tmux on every shell login</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -136,29 +134,17 @@ The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the following command in your Linux terminal.
-</span><span class='line'>
-</span><span class='line'>32-bit:
-</span><span class='line'>
-</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
-</span><span class='line'>64-bit:
-</span><span class='line'>
-</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-</span><span class='line'>Next, run the Dropbox daemon from the newly created .dropbox-dist folder.
-</span><span class='line'>
-</span><span class='line'>~/.dropbox-dist/dropboxd
-</span><span class='line'>If you're running Dropbox on your server for the first time, you'll be asked to copy and paste a link in a working browser to create a new account or add your server to an existing account. Once you do, your Dropbox folder will be created in your home directory. Download this CLI script to control Dropbox from the command line. For easy access, put a symlink to the script anywhere in your PATH.</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Simply add the following line of bash code to your .bashrc before your aliases; the code for other shells is very similar:
+</span><span class='line'>[[ $TERM != "screen" ]] && exec tmux
+</span><span class='line'>~/.bashrc
+</span><span class='line'># If not running interactively, do not do anything
+</span><span class='line'>[[ $- != *i* ]] && return
+</span><span class='line'>[[ $TERM != screen* ]] && exec tmux</span></code></pre></td></tr></table></div></figure>
 
 
-<h4>外部链接</h4>
+<h4>extern link</h4>
 
-<p><a href="https://www.dropbox.com/install?os=lnx">https://www.dropbox.com/install?os=lnx</a></p>
+<p><a href="https://wiki.archlinux.org/index.php/Tmux">https://wiki.archlinux.org/index.php/Tmux</a></p>
 </div>
   
   
@@ -184,6 +170,10 @@ The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install
   -->
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/del-line-start-and-end-space/">del line start and end space</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/03/09/linux-source-insight/">Linux Source Insight</a>
@@ -219,10 +209,6 @@ The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install
     
       <li class="post">
         <a href="/blog/2013/02/23/tmux-confing/">tmux confing</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/23/dropbox-install/">dropbox install</a>
       </li>
     
   </ul>

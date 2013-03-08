@@ -9,9 +9,19 @@
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="LS无配色 网上解决方法 1
-添加alias ls='ls --color'到.bashrc 结果 原因 my bash use longin shells for rvm use but bashrc for non-login shells MY解决方法I 1
-添加alias ls='ls &hellip;">
+  <meta name="description" content="Install Dropbox via command line 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -95,7 +105,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/23/ls-why-no-color/">Ls Why No Color?</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/23/dropbox-install/">Dropbox Install</a></h1>
     
     
       <p class="meta">
@@ -111,69 +121,44 @@
   
 
 
-<time datetime="2013-02-23T18:53:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-02-23T21:41:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h4>LS无配色</h4>
-
-<p><img class="center" src="/images/ls_nocolor.png"></p>
-
-<h4>网上解决方法</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bashrc</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>结果</h4>
-
-<p><img class="center" src="/images/ls_nocolor.png"></p>
-
-<h4>原因</h4>
-
-<center>
-my bash use longin shells for rvm use but bashrc for non-login shells
-</center>
-
-
-<p><img class="center" src="/images/bashrc_scope.png"></p>
-
-<h4>MY解决方法I</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加alias ls='ls --color'到.bash_profile</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>MY解决方法II</h4>
+  <div class="entry-content"><h4>Install Dropbox via command line</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>添加
-</span><span class='line'>if [ -f ~/.bash_aliases ]; then
-</span><span class='line'>    . ~/.bash_aliases
-</span><span class='line'>fi
-</span><span class='line'>到.bash_profile</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>The Dropbox daemon works fine on all 32-bit and 64-bit Linux servers. To install, run the following command in your Linux terminal.
+</span><span class='line'>
+</span><span class='line'>32-bit:
+</span><span class='line'>
+</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
+</span><span class='line'>64-bit:
+</span><span class='line'>
+</span><span class='line'>cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+</span><span class='line'>Next, run the Dropbox daemon from the newly created .dropbox-dist folder.
+</span><span class='line'>
+</span><span class='line'>~/.dropbox-dist/dropboxd
+</span><span class='line'>If you're running Dropbox on your server for the first time, you'll be asked to copy and paste a link in a working browser to create a new account or add your server to an existing account. Once you do, your Dropbox folder will be created in your home directory. Download this CLI script to control Dropbox from the command line. For easy access, put a symlink to the script anywhere in your PATH.</span></code></pre></td></tr></table></div></figure>
 
 
+<h4>外部链接</h4>
 
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>vim ~/.bash_profile
-</span><span class='line'>添加alias ls='ls --color'到.bash_profile
-</span><span class='line'>:wq</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>效果</h4>
-
-<p><img class="center" src="/images/bash_result.png"></p>
+<p><a href="https://www.dropbox.com/install?os=lnx">https://www.dropbox.com/install?os=lnx</a></p>
 </div>
   
   
@@ -199,6 +184,10 @@ my bash use longin shells for rvm use but bashrc for non-login shells
   -->
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/del-line-start-and-end-space/">del line start and end space</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/03/09/linux-source-insight/">Linux Source Insight</a>
@@ -234,10 +223,6 @@ my bash use longin shells for rvm use but bashrc for non-login shells
     
       <li class="post">
         <a href="/blog/2013/02/23/tmux-confing/">tmux confing</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/23/dropbox-install/">dropbox install</a>
       </li>
     
   </ul>
