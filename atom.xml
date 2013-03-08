@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-03-09T02:34:42+08:00</updated>
+  <updated>2013-03-09T02:35:46+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -27,13 +27,13 @@
     <link href="http://xiaoxiaoyi.github.com/blog/2013/03/09/del-line-start-and-end-space/"/>
     <updated>2013-03-09T02:26:00+08:00</updated>
     <id>http://xiaoxiaoyi.github.com/blog/2013/03/09/del-line-start-and-end-space</id>
-    <content type="html"><![CDATA[<h1>vim 删除每行开头结尾空格</h1>
+    <content type="html"><![CDATA[<h2>vim 删除每行开头结尾空格</h2>
 
-<h2>删除行末空格：</h2>
+<h3>删除行末空格：</h3>
 
 <p>:%s/\s+$//</p>
 
-<h2>删除行首空格：</h2>
+<h3>删除行首空格：</h3>
 
 <p>:%s/<sup>\s+//</sup>
 &#8221;%&#8221;：作用于整个文件；</p>
