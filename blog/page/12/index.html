@@ -9,13 +9,17 @@
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="tmux confing Start tmux on every shell login 1
+  <meta name="description" content="原因 编译时加入 |+clientserver| 特性，Vim 可以作为命令服务器，接受客户的消息并
+执行 MY解决方法 1
 2
 3
 4
 5
-6
-Simply add the following line of bash code to your .bashrc before your aliases; the code for &hellip;">
+git clone git@github.com:xiaoxiaoyi/vim73.git
+tar 解压
+.configuare
+make
+sudo &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -99,7 +103,7 @@ Simply add the following line of bash code to your .bashrc before your aliases; 
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/02/23/tmux-confing/">Tmux Confing</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/02/25/vim-server/">Vim Server</a></h1>
     
     
       <p class="meta">
@@ -115,36 +119,48 @@ Simply add the following line of bash code to your .bashrc before your aliases; 
   
 
 
-<time datetime="2013-02-23T23:00:00+08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2013</time>
+<time datetime="2013-02-25T11:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h4>tmux confing</h4>
+  <div class="entry-content"><h4>原因</h4>
 
-<p><img class="center" src="/images/tmux_config.png"></p>
+<p>编译时加入 |+clientserver| 特性，Vim 可以作为命令服务器，接受客户的消息并
+执行
+<img class="center" src="/images/clientserver.png"></p>
 
-<h4>Start tmux on every shell login</h4>
+<h4>MY解决方法</h4>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Simply add the following line of bash code to your .bashrc before your aliases; the code for other shells is very similar:
-</span><span class='line'>[[ $TERM != "screen" ]] && exec tmux
-</span><span class='line'>~/.bashrc
-</span><span class='line'># If not running interactively, do not do anything
-</span><span class='line'>[[ $- != *i* ]] && return
-</span><span class='line'>[[ $TERM != screen* ]] && exec tmux</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github.com:xiaoxiaoyi/vim73.git
+</span><span class='line'>tar 解压
+</span><span class='line'>.configuare
+</span><span class='line'>make
+</span><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
 
 
-<h4>extern link</h4>
+<h4>快捷使用</h4>
 
-<p><a href="https://wiki.archlinux.org/index.php/Tmux">https://wiki.archlinux.org/index.php/Tmux</a></p>
+<p><img class="center" src="/images/aliasvim.png"></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>添加别名到.bash_profile
+</span><span class='line'>alias e='vim --servername VIM-SERVER --remote-silent'
+</span><span class='line'>通过别名编辑
+</span><span class='line'>e filename</span></code></pre></td></tr></table></div></figure>
+
+
+
 </div>
   
   
@@ -170,6 +186,10 @@ Simply add the following line of bash code to your .bashrc before your aliases; 
   -->
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/11/lua-support-with-pathogen/">lua-support with pathogen</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/03/10/lua-learning-1/">learn Lua with C</a>
@@ -205,10 +225,6 @@ Simply add the following line of bash code to your .bashrc before your aliases; 
     
       <li class="post">
         <a href="/blog/2013/02/26/vimrc-map/">vimrc map</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/26/my-vimrc/">my vimrc</a>
       </li>
     
   </ul>
