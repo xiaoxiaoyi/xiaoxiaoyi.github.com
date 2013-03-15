@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-03-16T01:05:41+08:00</updated>
+  <updated>2013-03-16T01:30:00+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[duoshuo_comment]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/03/16/duoshuo-comment/"/>
+    <updated>2013-03-16T01:07:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/03/16/duoshuo-comment</id>
+    <content type="html"><![CDATA[<h2>注册多说账户</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/duoshuo/duoshuoSignUp.png"></p>
+
+<h2>修改_config.yml</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># Duoshuo Comments
+</span><span class='line'>duoshuo_show_comment_count: true</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>修改post.html</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/duoshuo/Terminal_002.png"></p>
+
+<h2>添加duoshuo.html</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/duoshuo/duoshuoCode.png"></p>
+
+<h2>经过以上步骤轻松体验中文评论系统</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[lua-support with pathogen]]></title>
@@ -998,40 +1027,6 @@ my bash use longin shells for rvm use but bashrc for non-login shells
 <p>如果你也想加入其中,一起交流学习,请<a href="http://xiaoxiaoyi.github.com/about.html">TEL Contact </a>联系我</p>
 
 <iframe height=498 width=510 frameborder=0 src="http://player.youku.com/embed/XNDgzODA5MzA4" allowfullscreen></iframe>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[课程预览_C51_devinstall]]></title>
-    <link href="http://xiaoxiaoyi.github.com/blog/2012/12/04/lesson-preview-c51-devinstall/"/>
-    <updated>2012-12-04T17:04:00+08:00</updated>
-    <id>http://xiaoxiaoyi.github.com/blog/2012/12/04/lesson-preview-c51-devinstall</id>
-    <content type="html"><![CDATA[<h2>介绍概览</h2>
-
-<p>KEIL软件的安装及破解(仅仅用于学习,切勿用于商业用途)教程</p>
-
-<p>网站还在开发当中,此视频用于测试&#8230;&#8230;</p>
-
-<p>感谢你的支持,如果你想现场加入其中,信息学院117实验室欢迎你的光临</p>
-
-<p>如果你也想加入其中,一起交流学习,请<a href="http://xiaoxiaoyi.github.com/about.html">TEL Contact </a>联系我</p>
-
-<iframe height=498 width=510 frameborder=0 src="http://player.youku.com/embed/XNDgzODA5MzA4" allowfullscreen></iframe>
-
-
-
-
-<!--
-<video id="my_video_1" class="video-js vjs-default-skin" controls
-  preload="auto" width="600" height="300" poster="/images/yisman.png"
-  data-setup="{}">
-  <source src="http://xiaoxiaoyi.github.com/vedio/dev_install.mp4" type='video/mp4'>
-  <source src="http://xiaoxiaoyi.github.com/vedio/dev_install.webm" type='video/webm'>
-</video>
-&#8211;>
 
 
 
