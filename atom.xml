@@ -4,7 +4,7 @@
   <title><![CDATA[yisman电子社区]]></title>
   <link href="http://xiaoxiaoyi.github.com/atom.xml" rel="self"/>
   <link href="http://xiaoxiaoyi.github.com/"/>
-  <updated>2013-03-16T01:30:00+08:00</updated>
+  <updated>2013-03-20T21:27:47+08:00</updated>
   <id>http://xiaoxiaoyi.github.com/</id>
   <author>
     <name><![CDATA[xiaoxiaoyi]]></name>
@@ -12,6 +12,252 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[exam cyou]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/03/20/exam-cyou/"/>
+    <updated>2013-03-20T21:00:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/03/20/exam-cyou</id>
+    <content type="html"><![CDATA[<h1>企业文化</h1>
+
+<p>*核心价值观:</p>
+
+<p>主动,执行,团结,进步,坚持,挑战,传承,制度</p>
+
+<p>*目标:</p>
+
+<p>在互联网领域争做世界第一</p>
+
+<p>*口号:</p>
+
+<p>我们创造游戏,我们生产快乐,永远追求卓越</p>
+
+<p>*使命:</p>
+
+<p>通过互联游戏,帮助用户找到童年时的快乐</p>
+
+<p>*历史大事迹4个里程碑</p>
+
+<p>2002年9月-正式成立-搜狐游戏事业部
+2007年5月9号->天龙八部正式公测->8万人在线
+2007年12月->北京畅游天下网络技术有限公司正式成立
+2009年4月2日-></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[lua table and object]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/03/19/lua-table-and-object/"/>
+    <updated>2013-03-19T21:29:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/03/19/lua-table-and-object</id>
+    <content type="html"><![CDATA[<h2>lua数据结构</h2>
+
+<h3>table是lua中唯一的数据结构</h3>
+
+<h3>lua中索引实现方式</h3>
+
+<p>eg:
+*通过数组下标索引方式构造mt[m]数组</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/usr/bin/env lua
+</span><span class='line'>mt={};
+</span><span class='line'>for i=1,10 do
+</span><span class='line'>    mt[i] = 0
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>*索引任意,一般与标准库保持一致从1开始
+eg:索引从-5到5</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mt={}
+</span><span class='line'>for i=-5,5 do
+</span><span class='line'>    mt[i] = 0
+</span><span class='line'>end
+</span><span class='line'>*创建便初始化
+</span><span class='line'>
+</span><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
+</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>mt={1,2,3,4,5,6}&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div></span></code></pre></td></tr></table></div></figure>
+
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/lua/luaTableObjects/DSC_0216.jpg"></p>
+
+<h3>lua中多维数组实现方式</h3>
+
+<p>eg:create mt[m][n]
+*通过数组的数组方式实现</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mt={}
+</span><span class='line'>for i=1,m do
+</span><span class='line'>    mt[i]={}
+</span><span class='line'>    for i=1,n do
+</span><span class='line'>        mt[i][j]=0
+</span><span class='line'>    end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>*通过行列组合方式实现</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mt={}
+</span><span class='line'>for i=1,m do
+</span><span class='line'>    for j=1,n do
+</span><span class='line'>        mt[i*n+j]=0
+</span><span class='line'>    end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/lua/luaTableObjects/DSC_0217.jpg"></p>
+
+<h3>lua中链表实现方式</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>list = nil
+</span><span class='line'>list = {next=list,value = v}</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>lua中链表遍历实现方式</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>local l = list
+</span><span class='line'>while l do
+</span><span class='line'>   print(l.value)
+</span><span class='line'>   l = l.next
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/lua/luaTableObjects/DSC_0218.jpg"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[wince start with app]]></title>
+    <link href="http://xiaoxiaoyi.github.com/blog/2013/03/19/wince-start-with-app/"/>
+    <updated>2013-03-19T21:13:00+08:00</updated>
+    <id>http://xiaoxiaoyi.github.com/blog/2013/03/19/wince-start-with-app</id>
+    <content type="html"><![CDATA[<h2>wince开机自启动</h2>
+
+<h3>编写代码</h3>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wince/shellexe_code.png"></p>
+
+<h3>source源代码</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>//ShellExe.cpp: Defines the entry point for the application.
+</span><span class='line'>//
+</span><span class='line'>
+</span><span class='line'>#include"stdafx.h"
+</span><span class='line'>#include"ShellExe.h"
+</span><span class='line'>#include&lt;windows.h>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>intWINAPIWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR    lpCmdLine, int nCmdShow)
+</span><span class='line'>{
+</span><span class='line'>  WIN32_FIND_DATA fd;
+</span><span class='line'>  HANDLE hd=INVALID_HANDLE_VALUE;
+</span><span class='line'>  int iCount = 20;
+</span><span class='line'>  while(iCount--)
+</span><span class='line'>  {
+</span><span class='line'>      hd=::FindFirstFile(lpCmdLine,&fd);
+</span><span class='line'>      Sleep(500);
+</span><span class='line'>      if(INVALID_HANDLE_VALUE!=hd)
+</span><span class='line'>          break;
+</span><span class='line'>  }
+</span><span class='line'>  if(0==iCount)
+</span><span class='line'>      return 0;
+</span><span class='line'>  FindClose(hd);
+</span><span class='line'>  SHELLEXECUTEINFO ShExeInfo={0};
+</span><span class='line'>  ShExeInfo.cbSize=sizeof(SHELLEXECUTEINFO);
+</span><span class='line'>  ShExeInfo.fMask=SEE_MASK_NOCLOSEPROCESS;
+</span><span class='line'>  ShExeInfo.hwnd=NULL; ShExeInfo.lpVerb=NULL;
+</span><span class='line'>  ShExeInfo.lpFile=lpCmdLine;
+</span><span class='line'>  ShExeInfo.lpParameters=L"";
+</span><span class='line'>  ShExeInfo.lpDirectory=NULL;
+</span><span class='line'>  ShExeInfo.nShow=SW_SHOW;
+</span><span class='line'>  ShExeInfo.hInstApp=NULL;
+</span><span class='line'>  ShellExecuteEx(&ShExeInfo);
+</span><span class='line'>  return 0;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>shellexe存放路径,记得创建快捷方式</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wince/shellexe_dir.png"></p>
+
+<h2>project.bib文件添加</h2>
+
+<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wince/project_bib.png"></p>
+
+<h2>project.dat文件添加</h2>
+
+<p>中文操作系统链接到启动目录下,英文链接到startup目录下
+<img class="center" src="http://xiaoxiaoyi.github.com/images/wince/project_dat.png"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[duoshuo_comment]]></title>
@@ -955,78 +1201,6 @@ my bash use longin shells for rvm use but bashrc for non-login shells
 </span><span class='line'>抓取区域：scrot -s rectangle.png
 </span><span class='line'>延时抓取：scrot -cd 10 menu.png
 </span><span class='line'>操作抓图：scrot action.png -e ‘mv $f ~/images/’</span></code></pre></td></tr></table></div></figure>
-
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wallch Install]]></title>
-    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallch-install/"/>
-    <updated>2013-02-22T21:32:00+08:00</updated>
-    <id>http://xiaoxiaoyi.github.com/blog/2013/02/22/wallch-install</id>
-    <content type="html"><![CDATA[<h4>安装代码</h4>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:wallch/version-3-ppa
-</span><span class='line'>sudo apt-get update
-</span><span class='line'>sudo apt-get install wallch</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>效果图</h4>
-
-<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wallch1.jpg"></p>
-
-<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wallch2.jpg"></p>
-
-<p><img class="center" src="http://xiaoxiaoyi.github.com/images/wallch3.jpg"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wallpapoz Install]]></title>
-    <link href="http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install/"/>
-    <updated>2013-02-22T18:27:00+08:00</updated>
-    <id>http://xiaoxiaoyi.github.com/blog/2013/02/22/wallpapoz-install</id>
-    <content type="html"><![CDATA[<h2>问题</h2>
-
-<p><img class="center" src="http://xiaoxiaoyi.github.com/images/Wallpapoz.png"></p>
-
-<h2>解决方法</h2>
-
-<h3>安装依赖包</h3>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install python-gnome2 python-imaging python-gtk2 python-glade2</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>安装图解</h3>
-
-<p><img class="center" src="http://xiaoxiaoyi.github.com/images/WallpapozInstall.png"></p>
-
-<h3>外部链接</h3>
-
-<p><a href="http://maketecheasier.com/ubuntu-how-to-change-wallpaper-easily-with-wallpapoz/2008/02/29" title="Title">maketecheasier.com</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Lesson_Preview]]></title>
-    <link href="http://xiaoxiaoyi.github.com/blog/2012/12/04/lesson-preview/"/>
-    <updated>2012-12-04T21:47:00+08:00</updated>
-    <id>http://xiaoxiaoyi.github.com/blog/2012/12/04/lesson-preview</id>
-    <content type="html"><![CDATA[<p>KEIL软件的安装及破解(仅仅用于学习,切勿用于商业用途)教程</p>
-
-<p>网站还在开发当中,此视频用于测试&#8230;&#8230;</p>
-
-<p>感谢你的支持,如果你想现场加入其中,信息学院117实验室欢迎你的光临</p>
-
-<p>如果你也想加入其中,一起交流学习,请<a href="http://xiaoxiaoyi.github.com/about.html">TEL Contact </a>联系我</p>
-
-<iframe height=498 width=510 frameborder=0 src="http://player.youku.com/embed/XNDgzODA5MzA4" allowfullscreen></iframe>
 
 
 

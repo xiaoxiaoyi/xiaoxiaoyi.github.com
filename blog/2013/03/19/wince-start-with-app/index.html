@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Linux Source Insight - yisman电子社区</title>
+  <title>wince start with app - yisman电子社区</title>
   <meta name="author" content="xiaoxiaoyi">
 
   
-  <meta name="description" content="让linux也具有source insight的强悍功能 插件需要 trinity.vim，srcexpl.vim，taglist.vim，NERD_tree.vim 配置 1
+  <meta name="description" content="wince开机自启动 编写代码 source源代码 1
 2
 3
 4
@@ -32,7 +32,19 @@
 21
 22
 23
-24 &hellip;">
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+//ShellExe.cpp: Defines the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -41,7 +53,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/03/09/linux-source-insight/">
+  <link rel="canonical" href="http://xiaoxiaoyi.github.com/blog/2013/03/19/wince-start-with-app/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -113,7 +125,7 @@
   
   <header>
     
-      <h1 class="entry-title">Linux Source Insight</h1>
+      <h1 class="entry-title">Wince Start With App</h1>
     
     
       <p class="meta">
@@ -129,20 +141,20 @@
   
 
 
-<time datetime="2013-03-09T02:09:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+<time datetime="2013-03-19T21:13:00+08:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>让linux也具有source insight的强悍功能</h2>
+<div class="entry-content"><h2>wince开机自启动</h2>
 
-<h3>插件需要</h3>
+<h3>编写代码</h3>
 
-<p>trinity.vim，srcexpl.vim，taglist.vim，NERD_tree.vim</p>
+<p><img class="center" src="/images/wince/shellexe_code.png"></p>
 
-<h3>配置</h3>
+<h3>source源代码</h3>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -179,54 +191,55 @@
 <span class='line-number'>33</span>
 <span class='line-number'>34</span>
 <span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>" // The switch of the Source Explorer
-</span><span class='line'>nmap &lt;F8> :SrcExplToggle&lt;CR>
-</span><span class='line'>"
-</span><span class='line'>" // Set the height of Source Explorer window
-</span><span class='line'>let g:SrcExpl_winHeight = 8
-</span><span class='line'>"
-</span><span class='line'>" // Set 100 ms for refreshing the Source Explorer
-</span><span class='line'>let g:SrcExpl_refreshTime = 100
-</span><span class='line'>"
-</span><span class='line'>" // Set "Enter" key to jump into the exact definition context
-</span><span class='line'>let g:SrcExpl_jumpKey = "&lt;ENTER>"
-</span><span class='line'>"
-</span><span class='line'>" // Set "Space" key for back from the definition context
-</span><span class='line'>let g:SrcExpl_gobackKey = "&lt;SPACE>"
-</span><span class='line'>"
-</span><span class='line'>" // In order to Avoid conflicts, the Source Explorer should know     what plugins
-</span><span class='line'>" // are using buffers. And you need add their bufname into the list  below
-</span><span class='line'>" // according to the command ":buffers!"
-</span><span class='line'>let g:SrcExpl_pluginList = [
-</span><span class='line'>\ "__Tag_List__",
-</span><span class='line'>\ "_NERD_tree_",
-</span><span class='line'>\ "Source_Explorer"
-</span><span class='line'>\ ]
-</span><span class='line'>" // Enable/Disable the local definition searching, and note that     this is not
-</span><span class='line'>" // guaranteed to work, the Source Explorer doesn't check the        syntax for now.
-</span><span class='line'>" // It only searches for a match with the keyword according to       command 'gd'
-</span><span class='line'>let g:SrcExpl_searchLocalDef = 1
+</pre></td><td class='code'><pre><code class=''><span class='line'>//ShellExe.cpp: Defines the entry point for the application.
+</span><span class='line'>//
 </span><span class='line'>
-</span><span class='line'>" // Do not let the Source Explorer update the tags file when         opening
-</span><span class='line'>let g:SrcExpl_isUpdateTags = 0
+</span><span class='line'>#include"stdafx.h"
+</span><span class='line'>#include"ShellExe.h"
+</span><span class='line'>#include&lt;windows.h>
 </span><span class='line'>
-</span><span class='line'>" // Use 'Exuberant Ctags' with '--sort=foldcase -R .' or '-L cscope. files' to
-</span><span class='line'>" //  create/update a tags file
-</span><span class='line'>let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
 </span><span class='line'>
-</span><span class='line'>" // Set "&lt;F12>" key for updating the tags file artificially
-</span><span class='line'>let g:SrcExpl_updateTagsKey = "&lt;F12>"
-</span><span class='line'>
-</span><span class='line'>"Open and close all the three plugins on the same time
-</span><span class='line'>nmap &lt;F9>   :TrinityToggleAll&lt;cr></span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>intWINAPIWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR    lpCmdLine, int nCmdShow)
+</span><span class='line'>{
+</span><span class='line'>  WIN32_FIND_DATA fd;
+</span><span class='line'>  HANDLE hd=INVALID_HANDLE_VALUE;
+</span><span class='line'>  int iCount = 20;
+</span><span class='line'>  while(iCount--)
+</span><span class='line'>  {
+</span><span class='line'>      hd=::FindFirstFile(lpCmdLine,&fd);
+</span><span class='line'>      Sleep(500);
+</span><span class='line'>      if(INVALID_HANDLE_VALUE!=hd)
+</span><span class='line'>          break;
+</span><span class='line'>  }
+</span><span class='line'>  if(0==iCount)
+</span><span class='line'>      return 0;
+</span><span class='line'>  FindClose(hd);
+</span><span class='line'>  SHELLEXECUTEINFO ShExeInfo={0};
+</span><span class='line'>  ShExeInfo.cbSize=sizeof(SHELLEXECUTEINFO);
+</span><span class='line'>  ShExeInfo.fMask=SEE_MASK_NOCLOSEPROCESS;
+</span><span class='line'>  ShExeInfo.hwnd=NULL; ShExeInfo.lpVerb=NULL;
+</span><span class='line'>  ShExeInfo.lpFile=lpCmdLine;
+</span><span class='line'>  ShExeInfo.lpParameters=L"";
+</span><span class='line'>  ShExeInfo.lpDirectory=NULL;
+</span><span class='line'>  ShExeInfo.nShow=SW_SHOW;
+</span><span class='line'>  ShExeInfo.hInstApp=NULL;
+</span><span class='line'>  ShellExecuteEx(&ShExeInfo);
+</span><span class='line'>  return 0;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
 
+<h2>shellexe存放路径,记得创建快捷方式</h2>
 
+<p><img class="center" src="/images/wince/shellexe_dir.png"></p>
+
+<h2>project.bib文件添加</h2>
+
+<p><img class="center" src="/images/wince/project_bib.png"></p>
+
+<h2>project.dat文件添加</h2>
+
+<p>中文操作系统链接到启动目录下,英文链接到startup目录下
+<img class="center" src="/images/wince/project_dat.png"></p>
 </div>
 
 
@@ -249,7 +262,7 @@
   
 
 
-<time datetime="2013-03-09T02:09:00+08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+<time datetime="2013-03-19T21:13:00+08:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
       
 
 
@@ -257,7 +270,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/03/09/linux-source-insight/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/03/09/linux-source-insight/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaoxiaoyi.github.com/blog/2013/03/19/wince-start-with-app/" data-via="" data-counturl="http://xiaoxiaoyi.github.com/blog/2013/03/19/wince-start-with-app/" >Tweet</a>
   
   
   
@@ -266,10 +279,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/28/keyboard-list-of-components/" title="Previous Post: KeyBoard List of Components">&laquo; KeyBoard List of Components</a>
+        <a class="basic-alignment left" href="/blog/2013/03/16/duoshuo-comment/" title="Previous Post: duoshuo_comment">&laquo; duoshuo_comment</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/03/09/del-line-start-and-end-space/" title="Next Post: del line start and end space">del line start and end space &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/03/19/lua-table-and-object/" title="Next Post: lua table and object">lua table and object &raquo;</a>
       
     </p>
   </footer>
